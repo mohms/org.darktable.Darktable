@@ -1,5 +1,5 @@
 {
-    "app-id": "org.darktable.Darktable",
+    "app-id": "org.darktable.R-Darktable",
     "runtime": "org.gnome.Platform",
     "runtime-version": "42",
     "sdk": "org.gnome.Sdk",
@@ -13,7 +13,7 @@
         "--socket=x11",
         "--filesystem=host",
         "--talk-name=org.freedesktop.secrets",
-        "--metadata=X-DConf=migrate-path=/org/darktable/Darktable/",
+        "--metadata=X-DConf=migrate-path=/org/darktable/R-Darktable/",
         /* Needed for colord to work */
         "--system-talk-name=org.freedesktop.ColorManager",
         /* Needed for gvfs to work */
@@ -29,7 +29,6 @@
         "/bin/*lensfun*",
         "/bin/metacopy",
         "/bin/pathtest",
-        "/bin/gphoto2*",
         "/doc",
         "/lib/cmake",
         "/lib/pkgconfig",
@@ -104,7 +103,7 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://www.exiv2.org/builds/exiv2-0.27.5-Source.tar.gz",
+                    "url": "https://github.com/Exiv2/exiv2/releases/download/v0.27.5/exiv2-0.27.5-Source.tar.gz",
                     "sha256": "35a58618ab236a901ca4928b0ad8b31007ebdc0386d904409d825024e45ea6e2"
                 }
             ]
@@ -178,16 +177,6 @@
                     "type": "archive",
                     "url": "https://www.freedesktop.org/software/colord/releases/colord-gtk-0.2.0.tar.xz",
                     "sha256": "2a4cfae08bc69f000f40374934cd26f4ae86d286ce7de89f1622abc59644c717"
-                }
-            ]
-        },
-        {
-            "name": "libgphoto2",
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/gphoto/libgphoto2/releases/download/v2.5.29/libgphoto2-2.5.29.tar.bz2",
-                    "sha256": "dbe3cefad8c634fc134d93467a33e242cb1030f0b9829deb9f1703f368ac027e"
                 }
             ]
         },
@@ -416,7 +405,7 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "https://github.com/darktable-org/darktable/",
+                    "url": "https://github.com/aurelienpierre/r-darktable/",
                     "branch": "master"
                 }
             ]
